@@ -85,7 +85,7 @@ export default function PostDetail() {
 
       {post.image && (
         <img
-          src={`http://localhost:5000/uploads/${post.image}`}
+          src={`https://blog-platform-j43c.onrender.com/uploads/${post.image}`}
           alt="post"
           style={{
             width: "500px",
