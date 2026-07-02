@@ -85,9 +85,9 @@ blog-platform/
 
 ## Deployment
 
-Frontend: [Live URL]
+Frontend: https://blog-platform-2.vercel.app
 
-Backend API: [Backend URL]
+Backend API: https://blog-platform-2-ss8v.onrender.com
 
 ## Screenshots
 
