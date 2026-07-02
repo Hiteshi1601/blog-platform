@@ -70,6 +70,11 @@ app.get("/", (req, res) => {
    DATABASE
 ========================= */
 
+if (!process.env.MONGO_URL) {
+  console.error("CRITICAL ERROR: MONGO_URL environment variable is not defined!");
+  process.exit(1);
+}
+
 mongoose
   .connect(process.env.MONGO_URL)
   .then(() => {
@@ -80,5 +85,6 @@ mongoose
     });
   })
   .catch((err) => {
-    console.log(err);
+    console.error("Database connection error:", err);
+    process.exit(1);
   });
